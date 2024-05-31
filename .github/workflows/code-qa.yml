@@ -1,0 +1,32 @@
+name: Code QA
+on: [push]
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Lint
+            action: bun run check:lint
+          - name: Typecheck
+            action: bun run check:types
+          - name: Build
+            action: bun run build
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - name: Setup turbo cache
+        uses: actions/cache@v4
+        with:
+          path: .turbo
+          key: turbo-qa-${{ job }}-${{ strategy }}-${{ github.sha }}
+          restore-keys: |
+            turbo-qa-${{ job }}-${{ strategy }}-
+      - name: ${{ matrix.name }}
+        run: |
+          bun i --frozen-lockfile
+          ${{ matrix.action }}
