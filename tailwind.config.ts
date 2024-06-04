@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "resume-shadow":
+          "radial-gradient(ellipse at bottom, var(--brand-gray-light), transparent 70%)",
+      },
       colors: {
         brand: {
           white: "var(--brand-white)",

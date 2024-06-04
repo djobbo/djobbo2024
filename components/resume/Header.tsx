@@ -6,7 +6,11 @@ import { resumeData } from "@/data/resume"
 export const Header = () => {
   return (
     <header className="flex justify-between">
-      <div>
+      <div
+        style={{
+          viewTransitionName: "resume-header",
+        }}
+      >
         <h1 className="text-[42px] font-light">{resumeData.name}</h1>
         <p className="flex items-center space-x-2 text-[14px] font-light uppercase text-foreground-alt">
           {resumeData.titles.map((title, i) => (
@@ -24,7 +28,12 @@ export const Header = () => {
           </Markdown>
         </div>
       </div>
-      <ul className="leading-8">
+      <ul
+        className="leading-8"
+        style={{
+          viewTransitionName: "resume-header-links",
+        }}
+      >
         {resumeData.links.map((link) => (
           <li key={link.url} className="flex items-center justify-end gap-2">
             <ContactLink link={link} />
