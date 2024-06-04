@@ -1,10 +1,11 @@
 import { resumeData } from "@/data/resume"
+
 import { Header } from "./Header"
-import { SectionTitle } from "./SectionTitle"
 import { Certifications } from "./sections/Certifications"
 import { Experiences } from "./sections/Experiences"
 import { Languages } from "./sections/Languages"
 import { Skills } from "./sections/Skills"
+import { SectionTitle } from "./SectionTitle"
 
 type ResumeProps = Readonly<{
   singleColumn?: boolean

@@ -1,4 +1,4 @@
-import { ResumeData } from "@/data/resume"
+import type { ResumeData } from "@/data/resume"
 
 type SkillProps = Readonly<{
   skill: ResumeData["skills"][number]["items"][number]

@@ -1,13 +1,14 @@
-import { Resume } from "@/components/resume"
 import { ArrowRight } from "lucide-react"
 import { Link } from "next-view-transitions"
+
+import { Resume } from "@/components/resume"
 
 export default function Home() {
   return (
     <main className="mx-auto w-full max-w-screen-xl p-16">
       <Link
         href="/resume"
-        className="after:bg-resume-shadow group relative block h-[32rem] overflow-hidden rounded-none p-4 transition-all after:absolute after:inset-x-0 after:bottom-0 after:h-16 hover:rounded-lg"
+        className="group relative block h-[32rem] overflow-hidden rounded-none p-4 transition-all after:absolute after:inset-x-0 after:bottom-0 after:h-16 after:bg-resume-shadow hover:rounded-lg"
       >
         <div className="transition-transform group-hover:rotate-[0.5deg]">
           <div className="relative mx-auto max-w-screen-lg rounded-lg border border-brand-gray-lighter bg-brand-white p-8 shadow-xl before:absolute before:inset-0 before:-z-10 before:-rotate-1 before:rounded-lg before:border-2 before:border-dashed before:border-brand-gray-light before:bg-brand-gray-lighter before:transition-transform before:group-hover:-rotate-2">

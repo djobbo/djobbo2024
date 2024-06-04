@@ -1,5 +1,6 @@
-import { ResumeData } from "@/data/resume"
 import Image from "next/image"
+
+import type { ResumeData } from "@/data/resume"
 
 type LanguageProps = Readonly<{
   language: ResumeData["languages"][number]

@@ -1,5 +1,6 @@
-import { cn } from "@/lib/utils"
 import Md, { type Options } from "react-markdown"
+
+import { cn } from "@/lib/utils"
 
 type MarkdownProps = Options
 

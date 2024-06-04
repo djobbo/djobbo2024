@@ -1,7 +1,8 @@
-import { ResumeData } from "@/data/resume"
-import Image from "next/image"
-import { Markdown } from "@/components/Markdown"
 import { CornerDownRight } from "lucide-react"
+import Image from "next/image"
+
+import { Markdown } from "@/components/Markdown"
+import type { ResumeData } from "@/data/resume"
 
 type ExperienceContributionProps = Readonly<{
   contribution: ResumeData["experiences"][number]["contributions"][number]

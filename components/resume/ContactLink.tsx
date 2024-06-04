@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { ResumeData } from "@/data/resume"
+
+import type { ResumeData } from "@/data/resume"
 
 type ContactLinkIconProps = Readonly<{
   type: ResumeData["links"][number]["type"]

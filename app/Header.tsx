@@ -1,5 +1,6 @@
-import { Button } from "@/components/Button"
 import { Link } from "next-view-transitions"
+
+import { Button } from "@/components/Button"
 
 export const Header = () => {
   return (

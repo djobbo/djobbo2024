@@ -1,5 +1,5 @@
+import type { IconType } from "@icons-pack/react-simple-icons"
 import {
-  IconType,
   SiAdobeillustrator,
   SiAdobephotoshop,
   SiBun,

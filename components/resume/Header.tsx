@@ -1,7 +1,9 @@
 import { Fragment } from "react"
+
 import { Markdown } from "@/components/Markdown"
-import { ContactLink, ContactLinkIcon } from "./ContactLink"
 import { resumeData } from "@/data/resume"
+
+import { ContactLink, ContactLinkIcon } from "./ContactLink"
 
 export const Header = () => {
   return (

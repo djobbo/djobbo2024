@@ -1,7 +1,8 @@
-import { cn } from "@/lib/utils"
+import type NextLink from "next/link"
 import { Link } from "next-view-transitions"
-import { ComponentProps } from "react"
-import NextLink from "next/link"
+import type { ComponentProps } from "react"
+
+import { cn } from "@/lib/utils"
 
 type ButtonProps = ComponentProps<typeof NextLink>
 

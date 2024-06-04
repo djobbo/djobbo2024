@@ -1,9 +1,12 @@
-import type { Metadata } from "next"
 import "./globals.css"
-import { ReactNode } from "react"
+
+import type { Metadata } from "next"
 import { Poppins as FontSans } from "next/font/google"
-import { cn } from "@/lib/utils"
 import { ViewTransitions } from "next-view-transitions"
+import type { ReactNode } from "react"
+
+import { cn } from "@/lib/utils"
+
 import { Header } from "./Header"
 
 const fontSans = FontSans({
