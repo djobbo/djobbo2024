@@ -11,6 +11,8 @@ const config: Config = {
       backgroundImage: {
         "resume-shadow":
           "radial-gradient(ellipse at bottom, var(--brand-gray-light), transparent 70%)",
+        "button-gradient":
+          "linear-gradient(0deg, #6C47FF 0%, #6C47FF 42%, #8661FF 58%, #8661FF 94%, #8F6FFF 96%, #8F6FFF 100%)",
       },
       colors: {
         brand: {
@@ -21,6 +23,7 @@ const config: Config = {
           gray: "var(--brand-gray)",
           "gray-dark": "var(--brand-gray-dark)",
           accent: "var(--brand-accent)",
+          "accent-dark": "var(--brand-accent-dark)",
         },
         foreground: "var(--foreground)",
         "foreground-alt": "var(--foreground-alt)",

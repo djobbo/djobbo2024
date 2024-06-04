@@ -4,6 +4,7 @@ import { ReactNode } from "react"
 import { Poppins as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils"
 import { ViewTransitions } from "next-view-transitions"
+import { Header } from "./Header"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -24,7 +25,10 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <ViewTransitions>
       <html lang="en">
-        <body className={cn(fontSans.variable)}>{children}</body>
+        <body className={cn(fontSans.variable)}>
+          <Header />
+          {children}
+        </body>
       </html>
     </ViewTransitions>
   )

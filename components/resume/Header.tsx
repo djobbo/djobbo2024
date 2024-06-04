@@ -21,8 +21,9 @@ export const Header = () => {
           ))}
         </p>
         <div className="mt-4 w-full max-w-[420px] leading-6">
-          <p className="text-[16px] font-semibold">{resumeData.about.title}</p>
-          <br />
+          <p className="mb-1 text-[20px] font-semibold">
+            {resumeData.about.title}
+          </p>
           <Markdown className="text-[14px]">
             {resumeData.about.description}
           </Markdown>

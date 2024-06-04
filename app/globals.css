@@ -10,6 +10,7 @@
   --brand-gray: #A1A1AC;
   --brand-gray-dark: #4B4A5F;
   --brand-accent: #8661FF;
+  --brand-accent-dark: #672EDF;
   --foreground: var(--brand-gray-dark);
   --foreground-alt: var(--brand-gray);
 }
