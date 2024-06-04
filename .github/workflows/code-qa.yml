@@ -10,8 +10,10 @@ jobs:
         include:
           - name: Lint
             action: bun run check:lint
-          - name: Typecheck
+          - name: Types
             action: bun run check:types
+          - name: Deadcode
+            action: bun run check:deadcode
           - name: Build
             action: bun run build
     steps:
