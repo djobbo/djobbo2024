@@ -34,7 +34,7 @@ const ButtonBackground = () => (
         height="31.5"
         rx="7.75"
         stroke="#6C47FF"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
     </g>
     <defs>
@@ -45,9 +45,9 @@ const ButtonBackground = () => (
         width="143"
         height="34"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -80,9 +80,9 @@ const ButtonBackground = () => (
         width="143"
         height="34"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           type="matrix"
@@ -116,12 +116,12 @@ const ButtonBackground = () => (
         y2="33"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#8F6FFF" />
-        <stop offset="0.04" stop-color="#8F6FFF" />
-        <stop offset="0.06" stop-color="#8661FF" />
-        <stop offset="0.42" stop-color="#8661FF" />
-        <stop offset="0.58" stop-color="#6C47FF" />
-        <stop offset="1" stop-color="#6C47FF" />
+        <stop stopColor="#8F6FFF" />
+        <stop offset="0.04" stopColor="#8F6FFF" />
+        <stop offset="0.06" stopColor="#8661FF" />
+        <stop offset="0.42" stopColor="#8661FF" />
+        <stop offset="0.58" stopColor="#6C47FF" />
+        <stop offset="1" stopColor="#6C47FF" />
       </linearGradient>
     </defs>
   </svg>

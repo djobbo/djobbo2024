@@ -3,6 +3,7 @@ import { Fragment } from "react"
 import { Markdown } from "@/components/Markdown"
 import { resumeData } from "@/data/resume"
 
+import { Uwuify } from "../Uwuify"
 import { ContactLink, ContactLinkIcon } from "./ContactLink"
 
 export const Header = () => {
@@ -13,12 +14,16 @@ export const Header = () => {
           viewTransitionName: "resume-header",
         }}
       >
-        <h1 className="text-[42px] font-light">{resumeData.name}</h1>
+        <h1 className="text-[42px] font-light">
+          <Uwuify text={resumeData.name} />
+        </h1>
         <p className="flex items-center space-x-2 text-[14px] font-light uppercase text-foreground-alt">
           {resumeData.titles.map((title, i) => (
             <Fragment key={title}>
               {i > 0 && <span className="text-brand-accent">•</span>}
-              <span>{title}</span>
+              <span>
+                <Uwuify text={title} />
+              </span>
             </Fragment>
           ))}
         </p>
